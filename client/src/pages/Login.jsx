@@ -20,15 +20,15 @@ const Login = () => {
 
     return (
         // Main Container
-        <div className="bg-slate-50 relative flex justify-center items-center min-h-screen">
-            <div className="flex space-x-2">
+        <div className="bg-sky-100 relative flex justify-center items-center min-h-screen">
+            <div className="bg-sky-100 flex space-x-2">
                 <img
                     className="w-[430px] hidden md:block rounded-l-lg shadow-lg"
                     src={outfit}
                     alt="outift"
                 />
                 <form
-                    className="flex flex-col space-y-8 border p-20 justify-center items-center rounded-lg md:rounded-r-lg md:rounded-l-none shadow-lg"
+                    className="bg-slate-50 flex flex-col space-y-8 border p-12 md:p-20 justify-center items-center rounded-lg md:rounded-r-lg md:rounded-l-none shadow-lg"
                     onSubmit={handleSubmit}
                 >
                     <h1 className="font-bold text-3xl">Locker</h1>

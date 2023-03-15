@@ -10,6 +10,7 @@ const register = async (req, res) => {
         id: user._id,
         email: user.email,
     };
+    console.log(userPayload, req.body);
     attachCookiesToResponse({ res, userPayload });
     res.status(StatusCodes.CREATED).json({ user: userPayload });
 };
